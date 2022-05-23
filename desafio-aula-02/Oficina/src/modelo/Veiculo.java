@@ -1,7 +1,6 @@
 
 package modelo;
 
-
 public class Veiculo {
     private String placa;
     private String modelo;
@@ -9,21 +8,22 @@ public class Veiculo {
     private String fabricante;
     private String cor;
     private Cliente cliente;
-    
-    public void Veiculo(String placa,String modelo,int ano, String fabricante, String cor, Cliente cliente){
+
+    public void Veiculo(String placa, String modelo, int ano, String fabricante, String cor, Cliente cliente) {
         this.ano = ano;
         this.cor = cor;
         this.fabricante = fabricante;
         this.modelo = modelo;
         this.placa = placa;
-        this.cliente= cliente; 
-    
+        this.cliente = cliente;
+
     }
-     public String toString(){
-        return cliente+ " Veículo: " + "," + placa + "," + ano + "," + fabricante + "," + modelo + "," + cor;
-    
+
+    public String toString() {
+        return cliente + " Veículo: " + "," + placa + "," + ano + "," + fabricante + "," + modelo + "," + cor;
+
     }
-    
+
     public String getPlaca() {
         return placa;
     }
@@ -49,7 +49,7 @@ public class Veiculo {
     }
 
     public String getFabricante() {
-        return fabricante;
+        return fabricante;cle
     }
 
     public void setFabricante(String fabricante) {
@@ -71,5 +71,5 @@ public class Veiculo {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-            
+
 }
